@@ -177,7 +177,7 @@ only screen and (max-width: 800px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
 }
 
@@ -219,11 +219,10 @@ only screen and (max-width: 800px) {
    
   }
 
-  .song-item {
+  #song-container {
     display: flex;
     font-weight: bold;
     font-size: 15px;
-    flex-direction: row;
     justify-content: space-between;
     border-color: var(--main-color);
     border-radius: 5px;
@@ -233,6 +232,30 @@ only screen and (max-width: 800px) {
     margin: 2px;
   }
 
-  .song-item:hover{
+  #song-container:hover{
     border-color: var(--active-color);
   }
+
+
+  /* .form-control label{
+    padding: 2px;
+    margin-bottom: 4px;
+    display: inline-block;
+  } */
+
+  /* .form-control input[type="text"], input[type="file"] {
+    padding: 3px;
+    margin-bottom: 5px;
+  } */
+
+  #image-preview{
+    margin: 12px 2px 2px;
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--main-color);
+  }
+  /* #song-dataList option {
+    background-color: #333;
+    color: #fff;
+  } */

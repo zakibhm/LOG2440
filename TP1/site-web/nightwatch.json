@@ -22,7 +22,7 @@
                 "waitForConditionTimeout": 500,
                 "retryAssertionTimeout": 500
             },
-            "filter": "./tests/e2e/index.js",
+            "filter": "./tests/e2e/create_playlist.js",
             "exclude": [
                 "./tests/e2e/utils.js",
                 "./tests/e2e/shared.js",
