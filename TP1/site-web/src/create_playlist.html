@@ -16,10 +16,12 @@
     <header>
       <nav id="nav-bar" class="flex-column">
         <ul class="flex-column">
+
           <li   style="display: flex;">
             <a href="index.html">
             <i class="fa fa-music"></i>
             <span>Ma Bibliothèque</span>
+
             </a>
           </li>
           <li   style="display: flex;">
@@ -28,12 +30,15 @@
             <span>Créer Playlist</span>
             </a>
           </li>
-          <li   style="display: flex;">
-            <a href="./about.html">
-            <i class="fa fa-info-circle"></i>
-            <span>À Propos</span>
+          
+        </ul>
+        <ul class="flex-column">
+          <li>
+            <a href="about.html">
+              <i class="fa fa-music"></i>
+              <span>À Propos</span>
             </a>
-          </li> 
+          </li>
         </ul>
       </nav>
     </header>
@@ -41,18 +46,20 @@
       <form class="form-group" id="playlist-form">
         <div id="general-info" class="flex-row">
           <fieldset class="form-control">
+
             <legend>Informations générales</legend>
             <div class="form-control flex-row">
               <label for="name">Nom:</label>
-              <input type="text" id="name" placeholder="Playlist #1" autofocus required><br>
+              <input type="text" id="name" name="name" placeholder="Playlist #1" autofocus required><br>
             </div>
             <div class="form-control flex-row">
               <label for="description">Description:</label>
-              <input type="text" id="description" placeholder="Nouvelle playlist" autofocus required><br>
+              <input type="text" id="description" name="description" placeholder="Nouvelle playlist" autofocus required><br>
             </div>
             <div class="form-control flex-row">
               <label for="image">Image : </label>
-              <input type="file" id="image" accept="image/*" required="true"><br>
+              <input type="file" id="image" name="myfile" accept="image/*" required="true"><br>
+
             </div>
           </fieldset>
           <img id="image-preview" src="./assets/img/default.png"/>
@@ -60,6 +67,7 @@
         <fieldset class="form-control">
           <legend>Chansons</legend>
           <datalist id="song-dataList">
+
             <option value="Whip">
             <option value="Overflow">
             <option value="Intrigue Fun">
@@ -73,6 +81,7 @@
             </div>
         </fieldset>
         <input type="submit" id="playlist-submit" value="Ajouter la playlist" />
+
       </form>
     </main>
     <footer id="playing-bar">
@@ -83,8 +92,10 @@
         </p>
       </div>
       <div id="creators">
+
         <p>Zekaria Bouchama 2174321</p>
         <p>Sofiane Moualdi 2115145</p>
+
       </div>
     </footer>
   </body>

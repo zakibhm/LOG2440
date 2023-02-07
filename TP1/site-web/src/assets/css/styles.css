@@ -191,9 +191,11 @@ only screen and (max-width: 800px) {
   }
 
   .playlist-preview img {
+    border-radius: 10%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10%;
   }
 
   a div .playlist-name {
@@ -218,18 +220,35 @@ only screen and (max-width: 800px) {
     visibility: visible;
    
   }
+  #songs-list
+  {
+        text-align: start;
+        vertical-align: middle;
+  }
 
-  #song-container {
+ #song-container{
+    justify-content: space-between;
     display: flex;
     font-weight: bold;
     font-size: 15px;
-    justify-content: space-between;
+    
     border-color: var(--main-color);
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
     padding: 10px;
     margin: 2px;
+
+    
+  } 
+
+  .song-item>div{
+    text-align: start;
+  }
+  #song-container .song-item {
+    justify-content: space-between;
+    
+    
   }
 
   #song-container:hover{
@@ -259,3 +278,16 @@ only screen and (max-width: 800px) {
     background-color: #333;
     color: #fff;
   } */
+
+#playlist-title{
+    margin-left:auto;
+    margin-right:auto;
+}
+#playlist-header img
+{
+    padding-top: 10px;
+}
+#playlist-edit i
+{
+padding-top:30px;
+}
